@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="main">
+            <div class="calculator">
+                <div class="top">
+                    <input type="text" placeholder="0" id="ekran" disabled>
+                </div>
+                <div class="btns">
+                    <div class="rows">
+                        <button onclick="Del()" style="background-color: rgb(202, 4, 4);" id="Clear">C</button>
+                        <button id="Allc" 
+                        style="background-color: rgb(202, 4, 4);" onclick="Clear()"
+                        >AC</button>
+                        <button id="methods" onclick="Calculate('*')"
+                        style="background-color: #535353;"
+                        >*</button>
+                        <button id="methods" onclick="Calculate('/')"
+                        style="background-color: #535353;"
+                        >/</button>
+                    </div>
+                    <div class="rows">
+                        <button onclick="Calculate(7)" id="btn">7</button>
+                        <button onclick="Calculate(8)" id="btn">8</button>
+                        <button onclick="Calculate(9)" id="btn">9</button>
+                        <button onclick="Calculate('+')" id="methods" style="background-color: #535353;" >+</button>
+                    </div>
+                    <div class="rows">
+                        <button onclick="Calculate(4)" id="btn">4</button>
+                        <button onclick="Calculate(5)" id="btn">5</button>
+                        <button onclick="Calculate(6)" id="btn">6</button>
+                        <button onclick="Calculate('-')" id="methods" style="background-color: #535353;" >-</button>
+                    </div>
+                    <div class="rows">
+                        <button onclick="Calculate(1)" id="btn">1</button>
+                        <button onclick="Calculate(2)" id="btn">2</button>
+                        <button onclick="Calculate(3)" id="btn">3</button>
+    
+                    </div>
+                    <div class="rows">
+    
+                        <button onclick="Calculate(0)" class="zero" id="btn">0</button>
+                        <button onclick="Calculate('.')" id="btn-dot btn">.</button>
+                        <button onclick="Teng()" id="btn-equals " class="equals" style="background-color: #535353;" >=</button>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
